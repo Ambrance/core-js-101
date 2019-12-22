@@ -37,6 +37,10 @@ const willYouMarryMe = (answer) => new Promise((result, err) => {
   result(answer ? 'Hooray!!! She said "Yes"!' : 'Oh no, she said "No".');
 });
 
+// function willYouMarryMe(/* isPositiveAnswer */) {
+// throw new Error('Not implemented');
+// }
+
 
 /**
  * Return Promise object that should be resolved with array containing plain values.
@@ -53,11 +57,15 @@ const willYouMarryMe = (answer) => new Promise((result, err) => {
  *    })
  *
  */
-const processAllPromises = (array) => new Promise((result) => {
+/* const processAllPromises = (array) => new Promise((result) => {
   const res = [];
   array.map((el) => el.then((num) => res.push(num)));
-  result(res);
-});
+  return result(res);
+  // throw new Error('Not implemented');
+}); */
+function processAllPromises(/* array */) {
+  throw new Error('Not implemented');
+}
 
 /**
  * Return Promise object that should be resolved with value received from
@@ -99,8 +107,9 @@ function getFastestPromise(array) {
  *    });
  *
  */
-function chainPromises(promises, action) {
-  return processAllPromises(promises).then((values) => values.reduce(action));
+function chainPromises(/* promises, action */) {
+  throw new Error('Not implemented');
+  // return processAllPromises(promises).then((values) => values.reduce(action));
 }
 
 module.exports = {
